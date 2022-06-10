@@ -1,0 +1,8 @@
+.navBtn {
+  font: inherit;
+  padding: 0.5 1.5rem;
+  cursor: pointer;
+  border: 2px;
+  color: black;
+  margin: 0 1rem;
+}
