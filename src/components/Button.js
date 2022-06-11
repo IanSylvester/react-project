@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Button = (props) => {
   return (
     <Link to="login">
-      <button classname="btn">Login</button>
+      <button className="btn">Login</button>
     </Link>
   );
 };
