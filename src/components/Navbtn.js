@@ -1,8 +1,9 @@
 const NavBtn = (props) => {
   return (
     <div className="navBtn">
-      <button>{props.text}</button>
+      <nav className="navLink">{props.text}</nav>
     </div>
   );
 };
+
 export default NavBtn;
