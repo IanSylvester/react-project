@@ -9,6 +9,7 @@ const Navbar = (props) => {
   const [click, setClick] = useState(false);
 
   const clickHandler = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
   return (
     <div>
       <nav className="navbar">
@@ -18,6 +19,33 @@ const Navbar = (props) => {
         <div className="menu-icon" onClick={clickHandler}>
           <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+            <li className="nav-item">
+                <Link to='../pages/Home' className='nav-links' onClick={closeMobileMenu}>
+                    Home
+                </Link>
+            </li>
+            <li className="nav-item">
+                <Link to='../pages/Tech' className='nav-links' onClick={closeMobileMenu}>
+                    Tech Trends
+                </Link>
+            </li>
+            <li className="nav-item">
+                <Link to='../pages/Tech' className='nav-links' onClick={closeMobileMenu}>
+                    Global News
+                </Link>
+            </li>
+            <li className="nav-item">
+                <Link to='../pages/hotw' className='nav-links' onClick={closeMobileMenu}>
+                    Hero of the Week
+                </Link>
+            </li>
+            <li className="nav-item">
+                <Link to='../pages/mw' className='nav-links' onClick={closeMobileMenu}>
+                    Most Wanted
+                </Link>
+            </li>
+        </ul>
       </nav>
     </div>
   );
