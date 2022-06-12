@@ -3,5 +3,13 @@
   margin: 0;
   padding: 0;
   font-family: 'Marvel';
+  
 }
+body{
+  background-image: url('./images/A.png')  ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
 
