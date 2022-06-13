@@ -11,6 +11,23 @@ const Navbar = (props) => {
 
   const clickHandler = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    }
+    else {
+      setDropdown(true);
+    }
+  }
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    }
+    else {
+      setDropdown(false);
+    }
+  }
   return (
     <div>
       <nav className="navbar">
@@ -30,7 +47,9 @@ const Navbar = (props) => {
               Home
             </Link>
           </li>
-          <li className="nav-item">
+          <li className="nav-item"
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}>
             <Link
               to="../pages/Tech"
               className="nav-links"
@@ -48,7 +67,6 @@ const Navbar = (props) => {
             >
               Global News
             </Link>
-            {dropdown && <Dropdown/> }
           </li>
           <li className="nav-item">
             <Link
