@@ -56,8 +56,8 @@ const Navbar = (props) => {
               onClick={closeMobileMenu}
             >
               Tech Trends
+              {dropdown && <Dropdown/> }
             </Link>
-            {dropdown && <Dropdown/> }
           </li>
           <li className="nav-item">
             <Link
