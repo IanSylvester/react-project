@@ -7,6 +7,7 @@
   height: 100px;
   align-items: center;
   position: relative !important;
+  opacity: .9;
 }
 
 .navbar-logo {
